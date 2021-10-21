@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <header>
   <div class="header">
     <h1>Get Your Dream Job</h1>
@@ -9,7 +10,7 @@
       <div class="content">
         <h5>ABOUT ME</h5>
         <h1>
-          Welcome, all! We at JusBid, are always excited to bring new ene-rgy into the house.
+          <b>Welcome, all! We at JusBid, are always excited to bring new energy into the house.</b>
         </h1>
         <p>
           This idea has the potential to grow and
@@ -20,7 +21,7 @@
           Our Start-Up came up with a
           revolutionary idea- making hotel rooms available by a customer's bid.
         </p>
-        <button class="btn btn-primary">Get Started</button>
+        <!-- <button class="btn btn-primary">Get Started</button> -->
       </div>
     </div>
 
@@ -96,7 +97,7 @@
 
 <section class="container">
   <div class="row section-4">
-    <div class="col-lg-6 col-image col-md-12 col-sm-12 ">
+    <div class="col-lg-6 col-image col-md-12 col-sm-12 col-xs-12">
       <div class="col-lg-2">
         <div class="image-1">
           <img src="assets/third.png" alt="">
@@ -109,7 +110,7 @@
       </div>
 
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12">
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
       <div class="column1-content">
         <h1>Let's build great things when we are together</h1>
         <p>Let's find some new bugs in our system. Let's develop a new app that serves our customers better. Let's make
@@ -125,7 +126,7 @@
 
 <section class="container">
   <div class="row section-email">
-    <h4>Be a part of a fun-filled working organization today. Pick a profile from below and send us your resume </h4>
+    <h3>Be a part of a fun-filled working organization today. Pick a profile from below and send us your resume </h3>
     <div class="col-12">
       <h5><a href="mailto:hr@jusbid.in">hr@jusbid.in</a></h5>
       <h5><a href="mailto:hr@rudrohom.com">hr@rudrohom.com</a></h5>
@@ -133,81 +134,213 @@
   </div>
 </section>
 
-<section class="container">
-  <div class="row section-5">
-    <div class="col-lg-6 col-md-12 col-sm-12">
-      <div class="f_column">
-        <h5>WE ARE HIRING</h5>
-        <h1>Head start towards
-          choosing right career.</h1>
-      </div>
+
+<div class="container">
+  <div class="section-5">
+    <div class="col-12">
+      <h2><b>Open Positions</b></h2>
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12">
-      <div class="l_column text-justify">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.</p>
-      </div>
+    <div class="position">
+      <a (click)="show(1)">
+        <p>Developer</p>
+      </a>
+      <a (click)="show(2)">
+        <p>Marketing</p>
+      </a>
+      <a (click)="show(3)">
+        <p>Call Center</p>
+      </a>
+      <a (click)="show(4)">
+        <p>Operation</p>
+      </a>
     </div>
   </div>
-</section>
+</div>
 
-<section class="container">
+<section class="container" *ngIf="showmodel">
   <div class="row section-6">
-    <div class="col mb-2">
+    <div class="col-lg-12">
       <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Front End Developer</h4> <br>
-          <p>Udaipur , Rajasthan</p>
-          <hr>
-          <p class="card-text">Front end developers are computer programmers who specialize in website design.</p>
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Front End Developer</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
           <div class="button">
-            <button class="btn btn-primary" (click)="applyfunc('UX')" data-bs-toggle="modal"
+            <button class="btn btn-primary" (click)="applyfunc('FAD')" data-bs-toggle="modal"
               data-bs-target="#exampleModal">Apply Now</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="col mb-2">
+    <div class="col-lg-12 my-2">
       <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">UX Researcher</h4> <br>
-          <p>Burcharest, Romania</p>
-          <hr>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit.</p>
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Full Stack Developer</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
           <div class="button">
-            <button class="btn btn-primary" (click)="applyfunc('UX1')">Apply Now</button>
+            <button class="btn btn-primary" (click)="applyfunc('FSD')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="col mb-2">
+    <div class="col-lg-12 my-2">
       <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">UX Researcher</h4> <br>
-          <p>Burcharest, Romania</p>
-          <hr>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit.</p>
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Sr. Mobile Developer</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
           <div class="button">
-            <button class="btn btn-primary" (click)="applyfunc('UX2')">Apply Now</button>
+            <button class="btn btn-primary" (click)="applyfunc('SMD')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="col mb-2">
+    <div class="col-lg-12 my-2">
       <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">UX Researcher</h4> <br>
-          <p>Burcharest, Romania</p>
-          <hr>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit.</p>
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Flutter App Developer</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
           <div class="button">
-            <button class="btn btn-primary" (click)="applyfunc('UX3')">Apply Now</button>
+            <button class="btn btn-primary" (click)="applyfunc('MAD')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12 my-2">
+      <div class="card">
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">UI/UX Designer</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-primary" (click)="applyfunc('UUD')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12 my-2">
+      <div class="card">
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Quality Tester</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-primary" (click)="applyfunc('QT')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12 my-2">
+      <div class="card">
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Test Automation Developer</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-primary" (click)="applyfunc('TAD')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
+
+<section class="container" *ngIf="showmodel1">
+  <div class="row section-6">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Business Development Associate</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-primary" (click)="applyfun('BDA')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 my-2">
+      <div class="card">
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Business Development Executive</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-primary" (click)="applyfun('BDE')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="container" *ngIf="showmodel2">
+  <div class="row section-6">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Call Center Representative</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-primary" (click)="applyfun('CCR')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container" *ngIf="showmodel3">
+  <div class="row section-6">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body d-flex">
+          <div class="content">
+            <h5 class="card-title">Senior Operation Manager</h5>
+            <p>Udaipur , Rajasthan</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-primary" (click)="applyfunct('SOM')" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="container">
   <div class="row section-7">
@@ -245,33 +378,106 @@
 
 
 
+<div class="container">
+  <div class="row section-9">
+    <div class="col-lg-12">
+      <div class="custom_modal" *ngIf="Isshowmodel">
+        <div class="card card-Showdow">
+          <div class="card_header"
+            style="display: flex;justify-content: space-between;align-items: center;width: 100%;">
+            <div class="title">
+              <h2 class="Card-title">Job Details</h2>
+            </div>
+            <p (click)="close()"><span>&#9587;</span></p>
+          </div>
+          <div class="body">
+            <h4>{{data}}</h4>
+            <h5><b>Requirements</b></h5>
+            <ul>
+              <div *ngFor="let data of object">
+                {{data}}
+              </div>
+              <h5><b>Technology Used</b></h5>
+            </ul>
+            <div *ngFor="let skill of skill">
+              {{skill}}
+            </div>
+            <div class="button">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe80wJ_ddqy78WyzL4MSE925snX3HsSjST5VyDafj0dMVfsCA/viewform"><button class="btn btn-primary">Apply Here</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row section-9">
+    <div class="col-lg-12">
+      <div class="custom_modal" *ngIf="Isshowmodel1">
+        <div class="card card-Showdow">
+          <div class="card_header"
+            style="display: flex;justify-content: space-between;align-items: center;width: 100%;">
+            <div class="title">
+              <h2 class="Card-title">Job Details</h2>
+            </div>
+            <p (click)="close()"><span>&#9587;</span></p>
+          </div>
+          <div class="body">
+            <h4>{{data}}</h4>
+            <h5><b>Requirements</b></h5>
+            <ul>
+              <div *ngFor="let data of object1">
+                {{data}}
+              </div>
+            </ul>
+            <div class="button">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe80wJ_ddqy78WyzL4MSE925snX3HsSjST5VyDafj0dMVfsCA/viewform"><button class="btn btn-primary">Apply Here</button></a>
+            </div>
+          </div>
+        </div>
+     </div>
+   
+    </div>
+  </div>
+</div>
 
 
-<!-- <div class="modal-body">
-  <h3>[Job Title]</h3>
-  <p>Formal position title.</p>
-  <h3>Reports To:</h3>
-  <p>The [job title] will report to [position title or titles this position reports to]. {{string}}</p>
-  <h3>Job Overview:</h3>
-  <p>Provide a brief, four-sentence description of the role, what success in the position looks like, and
-    how it
-    fits into the company or organization overall.</p>
-  <h3>Responsibilities and Duties:</h3>
-  <li>List the essential duties required to carry out this job.</li>
-  <li>List them in order of importance.</li>
-  <li>Use complete sentences.</li>
-  <li>Start sentences with verbs.</li>
-  <li>Use the present tense.</li>
-  <li>Use gender-neutral language.</li>
-  <h3>Qualifications:</h3>
-  <li>Education level.</li>
-  <li> Experience.</li>
-  <li>Specific skills.</li>
-  <li>Personal characteristics.</li>
-  <li>Certifications.</li>
-  <li>Licenses.</li>
-  <li>Physical abilities.</li>
-  <h4>Please Fill the below form </h4>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe80wJ_ddqy78WyzL4MSE925snX3HsSjST5VyDafj0dMVfsCA/viewform">Click
-    here</a>
-</div> -->
+
+
+<div class="container">
+  <div class="row section-9">
+    <div class="col-12">
+      <div class="custom_modal" *ngIf="Isshowmodel2">
+        <div class="card card-Showdow">
+          <div class="card_header"
+            style="display: flex;justify-content: space-between;align-items: center;width: 100%;">
+            <div class="title">
+              <h2 class="Card-title">Job Details</h2>
+            </div>
+            <p (click)="close()"><span>&#9587;</span></p>
+          </div>
+          <div class="body">
+            <h4>{{data}}</h4>
+            <h5><b>Skills</b></h5>
+            <ul>
+              <div *ngFor="let data of skill1">
+                <h6>{{data}}</h6>
+              </div>
+            </ul>
+            <h5><b>Job Responsibilities</b></h5>
+            <ul>
+              <div *ngFor="let d of object2">
+                <h6>{{d}}</h6>
+              </div>
+            </ul>
+            <div class="button">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe80wJ_ddqy78WyzL4MSE925snX3HsSjST5VyDafj0dMVfsCA/viewform"><button class="btn btn-primary">Apply Here</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

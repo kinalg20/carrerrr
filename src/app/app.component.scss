@@ -17,11 +17,12 @@ header {
         text-align: justify;
     }
     p {
-        font-size: 22px;
+        font-size: 21px;
     }
     .content {
         p {
             text-align: justify;
+            color: gray;
         }
         button {
             width: 100%;
@@ -142,7 +143,8 @@ header {
 
 .section-email {
     margin-top: 100px;
-    h4 {
+    text-align: center;
+    h5 {
         text-align: center;
     }
     h5 {
@@ -151,42 +153,91 @@ header {
 }
 
 .section-5 {
-    margin-top: 100px;
-    .f_column {
-        h5 {
-            color: gray;
-        }
-        h1 {
-            // width: 50%;
-        }
+    margin-top: 50px;
+    h2 {
+        text-align: center;
     }
-    .l_column {
-        float: right;
-        p {
-            color: gray;
-            font-weight: 400;
-            margin-left: 0px;
-            line-height: 30px;
+    .position {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        a:hover {
+            color: red;
         }
     }
 }
 
 .section-6 {
-    margin-top: 100px;
+    margin-top: 50px;
     .card {
+        width: 100%;
+    }
+    .card-body {
+        justify-content: space-between;
+        .button {
+            padding: 10px;
+        }
+    }
+}
+
+.section-7 {
+    margin-top: 50px;
+    text-align: center;
+    h6 {
+        color: gray;
+        letter-spacing: 10px;
+    }
+}
+
+.section-8 {
+    img {
+        width: 100%;
         height: 100%;
-        button {
-            width: 100%;
+    }
+}
+
+.section-9 {
+    .custom_modal {
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        color: #000;
+        .card {
+            border-radius: 10px;
+            padding: 20px;
+
+            .card_header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+            .Card-title {
+                font-size: 25px;
+                color: #000;
+                font-weight: bold;
+            }
+            .header-title {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            .button{
+                margin-top: 20px;
+                text-align: center;
+            }              
         }
     }
 }
 
 @media (max-width: 1440px) {
-    .section-2 {
-        .col-image {
-            // margin-left: -2%;
-        }
-    }
     .section-4 {
         .col-image {
             margin-left: -2%;
@@ -276,8 +327,6 @@ header {
             margin-left: -20%;
         }
     }
-    .section-5 {
-    }
 }
 
 @media (max-width: 425px) {
@@ -363,26 +412,9 @@ header {
         }
     }
     .section-email {
+        text-align: center;
         h4 {
             font-size: 20px;
-        }
-    }
-    .section-5 {
-        .f_column {
-            h5 {
-                color: gray;
-            }
-            h1 {
-                font-size: 30px;
-            }
-        }
-        .l_column {
-            p {
-                color: gray;
-                font-weight: 400;
-                margin-left: 0px;
-                line-height: 30px;
-            }
         }
     }
 }
@@ -469,63 +501,23 @@ header {
             }
         }
     }
-    .section-5 {
-        .f_column {
-            h1 {
-                font-size: 25px;
-            }
+}
+
+
+
+@media(max-width:320px){
+    .container{
+        overflow-x: hidden;
+        width: 117%;
+    }
+    .header{
+        padding: 18px!important;
+        width: 112%!important;
+        h1{
+            font-size: 20px;
         }
-        .l_column {
-            p {
-                line-height: 25px;
-            }
-        }
+    }
+    .section-3{
+        overflow-x: visible;
     }
 }
-.section-7 {
-    margin-top: 50px;
-    text-align: center;
-    h6 {
-        color: gray;
-        letter-spacing: 10px;
-    }
-}
-
-.section-8 {
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-// .model {
-//     .card2 {
-//         background-color: white;
-//         height: 800px !important;
-//         width: 700px !important;
-//         position: fixed;
-//         top: 0.5%;
-//         margin-top: 20px;
-//         margin-left: 500px;
-//         padding-left: 20px;
-//         // border-style: solid;
-//         border-radius: 5px;
-//         // box-shadow: 0px 1px 3px white;
-
-//         button {
-//             float: right;
-//             margin-top: -42px;
-//             width: 30px;
-//             height: 30px;
-//             margin-right: 2%;
-//         }
-//     }
-// }
-
-// @media (max-width: 1920px) {
-//     .model {
-//         .card2 {
-//             overflow: auto;
-//         }
-//     }
-// }
